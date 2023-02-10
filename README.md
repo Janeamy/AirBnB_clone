@@ -41,16 +41,16 @@ In Non-interactive mode,the shell will need to be run with a command input piped
 
 AVAILABLE COMMANDS AND WHAT THEY DO
 
-quit/EOF :Exits the program.
+* quit/EOF :Exits the program.
 
-create : creates a new instance of a class and saves it to JSON file.
+* create : creates a new instance of a class and saves it to JSON file.
 
-show : Prints the string representation of an instance based on the class name and id.
+* show : Prints the string representation of an instance based on the class name and id.
 
-help : Provides a text describing how to use a command.
+* help : Provides a text describing how to use a command.
 
-update : Updates an instance based on the class name and id by adding or updating attribute.
+* update : Updates an instance based on the class name and id by adding or updating attribute.
 
-all : Prints all string representation of all instances based or not on the class name.
+* all : Prints all string representation of all instances based or not on the class name.
 
-destroy : Deletes an instance based on the class name and id.
+* destroy : Deletes an instance based on the class name and id.
