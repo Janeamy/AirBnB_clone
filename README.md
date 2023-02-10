@@ -10,26 +10,26 @@ HOW TO INSTALL
 
 The repository of the project should be cloned from Github. This will contain the simple shell program and all of its dependencies. After the repo has been cloned, a folder called AirBnB_clone will be available where there will be several files that will allow the program to work which includes:
 
-/console.py : The min executable of the project; the command interpreter.
+* /console.py : The min executable of the project; the command interpreter.
 
-models/engine/file_storage.py : Class that serializes instances to a JSON file a                                nd deserializes JSON file to instances.
+* models/engine/file_storage.py : Class that serializes instances to a JSON file a                                nd deserializes JSON file to instances.
 
-models/base_model.py : Class that defines all common attributes/methods for 
+* models/base_model.py : Class that defines all common attributes/methods for 
                         other classes.
 
-models/user.py : User class that inherits from Basemodel.
+* models/user.py : User class that inherits from Basemodel.
 
-models/_init_.py : A unique file storage instance for the application.
+* models/_init_.py : A unique file storage instance for the application.
 
-models/amenity.py : Amenity class that inherits from Basemodel.
+* models/amenity.py : Amenity class that inherits from Basemodel.
 
-models/place.py : Place class that inherits from Basemodel.
+* models/place.py : Place class that inherits from Basemodel.
 
-models/state.py : State class that inherits from Baemodel.
+* models/state.py : State class that inherits from Baemodel.
 
-models/city.py : City class that inherits from Basemodel.
+* models/city.py : City class that inherits from Basemodel.
 
-models/review.py : Review class that inherits from Basemodel.
+* models/review.py : Review class that inherits from Basemodel.
 
 USAGE:
 
