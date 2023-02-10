@@ -51,3 +51,19 @@ class BaseModel:
             d["created_at"] = self.created_at.isoformat()
             d["updated_at"] = self.updated_at.isoformat()
             return d
+
+"""
+Update models/base_model.py: to link your BaseModel to FileStorage by using the variable storage
+"""
+
+import models
+
+class BaseModel:
+    def __init__(self, *args, **kwargs):
+        ...
+        if not kwargs:
+            models.storage.new(self)
+
+    def save(self):
+        models.storage.save()
+        ...
