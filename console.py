@@ -175,3 +175,46 @@ class HBNBCommand(cmd.Cmd):
             print("** class doesn't exist **")
         else:
             print([str(v)
+
+"""updated code for the console.py file:"""
+
+# console.py
+from models import storage
+from models.base_model import BaseModel
+from models.amenity import Amenity
+from models.city import City
+from models.place import Place
+from models.review import Review
+from models.state import State
+from models.user import User
+
+class HBNBCommand:
+    """
+    Contains the entry point of the command interpreter
+    """
+    classes = {"BaseModel": BaseModel, "User": User,
+            "State": State, "City": City,
+            "Amenity": Amenity, "Place": Place,
+            "Review": Review}
+
+    def do_create(self, class_name, *args):
+        """
+        Creates a new instance of class_name
+        """
+        if class_name not in HBNBCommand.classes:
+            print("** class doesn't exist **")
+        else:
+            new_instance = HBNBCommand.classes[class_name]()
+            new_instance.save()
+            print(new_instance.id)
+
+    def do_show(self, class_name, id):
+        """
+        Prints the string representation of an instance based on the class name
+        and id
+        """
+        key = class_name + "." + id
+        if class_name not in HBNBCommand.classes:
+            print("** class doesn't exist **")
+        el
+
