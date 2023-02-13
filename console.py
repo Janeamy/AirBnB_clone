@@ -82,8 +82,8 @@ class HBNBCommand(cmd.Cmd):
         else:
             class_name, instance_id = line.split()[0], line.split()[1] if len(line.split()) > 1 else None
             if class_name in models.classes():
-                if instance_id
-                key = "{}.{}".format(class_name, instance_id)
+                if instance_id:
+                    key = "{}.{}".format(class_name, instance_id)
                 if key in models.all().keys():
                     models.all().pop(key)
                     models.save()
