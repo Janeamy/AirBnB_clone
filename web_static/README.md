@@ -1,1 +1,0 @@
-web static task echoke!!!
