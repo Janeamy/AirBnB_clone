@@ -1,105 +1,76 @@
+/* search bar */
+div.container {
+    max-width: 1000px;
+    margin: 30px auto;
+    /* text-align: center; */
+}
 section.filters {
-	position: relative;
-	background-color: white;
-	height: 70px;
-	width: 100%;
-	border: 1px solid #DDDDDD;
-	border-radius: 4px;
+    background-color: white;
+    height: 70px;
+    width: 100%;
+    border: 1px solid #DDDDDD;
+    border-radius: 4px;
+}
+section.filters button {
+    background-color: #FF5A5F;
+    height: 48px;
+    width: 20%;
+    border: 0;
+    border-radius: 4px;
+    font-size: 18px;
+    color: #FFFFFF;
+    float: right;
+    margin: 11px 30px;
 }
 section.filters button:hover {
-	position: absolute;
-	font-size: 18px;
-	background-color: #FF5A5F;
-	color: #FFFFFF;
-	height: 48px;
-	width: 20%;
-	border: none;
-	border-radius: 4px;
-	right: 30px;
-	top: 11px;
+    opacity: .9;
 }
-section.filters button:hover {
-	opacity: 0.9;
+/* location and amenities part of search bar */
+.locations,
+.amenities {
+    height: 100%;
+    width: 25%;
+    float: left;
 }
-section.filters div.locations {
-	position: absolute;
-	height: 100%;
-	width: 25%;
-	border-right: 1px solid #DDDDDD;
-	line-height: 100%;
+.locations {
+    border-right: 1px solid #DDDDDD;
 }
-section.filters div.locatios ul.popover {
-	position: absolute;
-	background-color: #FAFAFA;
-	border: 1px solid #DDDDDD;
-	border-radius: 4px;
-	width: 100%;
-	top: 70%;
-	list-style: none;
-	visibility: hidden;
-	margin: 0px;
-	padding-right: 0px;
-	padding-left: 0px;
-	padding-top: 20px;
-	padding-bottom: 40px;
-	left: -1px;
-	z-index: 1;
+.locations h3,
+.amenities h3 {
+    font-weight: 600;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    text-align: left;
+    margin-left: 30px;
 }
-section.filters div.locations ul.popover li h2 {
-	font-size: 16px;
-	margin-left: 35px;
+.locations h4,
+.amenities h4 {
+    font-weight: 400;
+    font-size: 14px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: left;
+    margin-left: 30px;
 }
-section.filters div.locationul.popover li ul {
-	list-style: none;
+/* display location and amenities options upon hover */
+.popover {
+    display: none;
+    background-color: #FAFAFA;
+    border: 1px solid #DDDDDD;
+    border-radius: 4px;
+    position: relative;
+    z-index: 1;
 }
-section.filiter div.location ul.popover li ul li {
-	margin-left: 12px;
-	padding-bottom: 10px;
+.popover h2 {
+    font-size: 16px;
 }
-section.filters div.locations:hover ul.popover {
-	visibility: visible;
+li {
+    list-style-type: none;
+    margin-top:10px;
+    margin-bottom: 10px;
 }
-section.filiter div.amenities {
-	position: absolute;
-	height: 100%;
-	height: 25%;
-	left: 25%;
-	line-height: 100%;
+.locations:hover .popover,
+.amenities:hover .popover {
+    display: block;
 }
-section.filters div.amenities ul.popover {
-	position: absolute;
-	background-color: #FAFAFA;
-	border: 1px solid #DDDDDD;
-	border-radius: 4px;
-	width: 100%;
-	top: 70px;
-	list-style: none;
-	visibility: hidden;
-	margin: 0px;
-	padding-right: 0px;
-	padding-left: 0px;
-	padding-top: 30px;
-	padding-bottom: 25px;
-	z-index: 1;
-}
-section.filters div.amenities ul.popover li {
-	margin-left: 50px
-	padding-bottom: 10px;
-}
-section.filters div.amenities:hover ul.popover {
-	visibility: visible;
-}
-section.filters h3 {
-	position: absolute;
-	font-weight: 600;
-	top: 0px;
-	left: 50px;
-}
-section.filters h4 {
-	position: absolute;
-	font-weight: 400;
-	font-size: 14px;
-	top: 22px;
-	left: 50px;
-}
-
